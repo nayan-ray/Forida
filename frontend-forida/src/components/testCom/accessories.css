@@ -1,0 +1,46 @@
+.accessories{
+    width: 350px;
+    margin-left: 60px;
+    position: relative;
+
+}
+.accessories img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.accessories__text{
+    background-color: rgba(255, 255, 255, .8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width : 160px;
+    line-height: 7px;
+    text-align: center;
+    padding: 0 15px;
+
+}
+.accessories__text::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #f70b38;
+    z-index: -1;
+    opacity: 0;
+}
+
+.accessories:hover .accessories__text{
+    background-color: transparent;
+    color: #fff;
+}
+.accessories:hover .accessories__text::after{
+    opacity: 0.8;
+    left: 0;
+    transition: 0.5s
+}
