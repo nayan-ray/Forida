@@ -1,5 +1,7 @@
-.Container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  background: #fff;
 }
