@@ -1,18 +1,17 @@
 import React from "react";
-import { ShoppingCart } from "lucide-react";
+import { Menu } from "lucide-react";
 
-const CartIcon = () => {
+const MenuIcon = () => {
   return (
     <div
       className="flex-1 flex items-center justify-center border-e border-[#ebebeb] py-4.5"
-      onClick={() => document.getElementById("my_modal_3").showModal()}
-    > 
-      
-        <ShoppingCart size={14} color="#111" strokeWidth={2}/>
-     
-      <dialog id="my_modal_3" className="modal modal-end bg-black/50">
+      onClick={() => document.getElementById("my_modal_1").showModal()}
+    >
+      <Menu size={14} color="#111" strokeWidth={2} />
+
+      <dialog id="my_modal_1" className="modal modal-end bg-black/50">
         <div className="modal-box  transition-all duration-300 delay-200 relative">
-          <div className="p-4 ">Cart</div>
+          <div className="p-4 ">Menu</div>
           <h3 className="font-bold text-lg">Hello!</h3>
           <p className="py-4">
             Press ESC key or click the button below to close
@@ -29,4 +28,4 @@ const CartIcon = () => {
   );
 };
 
-export default CartIcon;
+export default MenuIcon;

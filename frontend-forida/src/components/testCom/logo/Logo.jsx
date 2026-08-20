@@ -5,7 +5,7 @@ import logoBanner from "../../../assets/7-fieldbrand.jpg"
 
 const Logo = () => {
   return (
-    <div>
+    <div className=''>
        <div className="logo-container">
            <img className="logo-img" src={logoBanner} alt="Logo" />
 

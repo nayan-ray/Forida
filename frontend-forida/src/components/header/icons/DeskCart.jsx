@@ -1,16 +1,15 @@
-import React from "react";
+import React from 'react'
 import { ShoppingCart } from "lucide-react";
-
-const CartIcon = () => {
+const DeskCart = () => {
   return (
-    <div
-      className="flex-1 flex items-center justify-center border-e border-[#ebebeb] py-4.5"
-      onClick={() => document.getElementById("my_modal_3").showModal()}
+      <div
+      className="flex-1 flex items-center justify-center  py-4.5"
+      onClick={() => document.getElementById("my_modal_D3").showModal()}
     > 
       
-        <ShoppingCart size={14} color="#111" strokeWidth={2}/>
+        <ShoppingCart size={20} color="#fff" strokeWidth={3}/>
      
-      <dialog id="my_modal_3" className="modal modal-end bg-black/50">
+      <dialog id="my_modal_D3" className="modal modal-end bg-black/50">
         <div className="modal-box  transition-all duration-300 delay-200 relative">
           <div className="p-4 ">Cart</div>
           <h3 className="font-bold text-lg">Hello!</h3>
@@ -26,7 +25,7 @@ const CartIcon = () => {
         </div>
       </dialog>
     </div>
-  );
-};
+  )
+}
 
-export default CartIcon;
+export default DeskCart
