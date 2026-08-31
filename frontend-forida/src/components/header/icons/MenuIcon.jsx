@@ -7,7 +7,7 @@ const MenuIcon = () => {
       className="flex-1 flex items-center justify-center border-e border-[#ebebeb] py-4.5"
       onClick={() => document.getElementById("my_modal_1").showModal()}
     >
-      <Menu size={14} color="#111" strokeWidth={2} />
+      <Menu size={14} color="#111" strokeWidth={3} />
 
       <dialog id="my_modal_1" className="modal modal-end bg-black/50">
         <div className="modal-box  transition-all duration-300 delay-200 relative">

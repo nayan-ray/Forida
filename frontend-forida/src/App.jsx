@@ -1,4 +1,5 @@
 import Header from "./components/header/header/Header"
+import Home from "./pages/HomePage/Home"
 import TestWithCss from "./pages/test/TestWithCss"
 
 
@@ -9,7 +10,8 @@ function App() {
     <>
       <div>
         {/* <TestWithCss /> */}
-        <Header />
+        {/* <Header /> */}
+        <Home />
       </div>
     </>
   )

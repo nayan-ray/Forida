@@ -64,7 +64,7 @@
     transform: scale(0);
 }
 .icon-item:hover{
-    background-color: rgb(156, 23, 23);
+    background-color: #9c1717;
     border: 2px solid rgb(156, 23, 23);
    
 }

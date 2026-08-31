@@ -10,7 +10,7 @@ import Desktop from "./Desktop";
 
 const Header = () => {
   return (
-    <header className="bg-[#111] h-auto">
+    <header className="bg-transparent h-auto fixed left-0 right-0 top-0 z-20">
       <div className="max-w-full mx-auto px-3.75 lg:max-w-292.5 lg:h-22 pb-7.5 lg:pb-0">
         <div className="desktop hidden lg:flex items-center h-full">
               <Desktop />
