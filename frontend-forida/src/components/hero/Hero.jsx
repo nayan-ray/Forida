@@ -63,9 +63,7 @@ const Hero = () => {
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
+        
         >
           {slides.map((slide, index) => (
             <div>

@@ -8,8 +8,12 @@
 
 
 @theme {
+
+  --breakpoint-xs: 0rem;
+  --breakpoint-sm: 36rem;
   --breakpoint-lg: 62rem;
-   --breakpoint-xl: 75rem;
+  --breakpoint-xl: 75rem;
+  --breakpoint-xxl: 87.5rem;
 
 
   --font-poppins: "Poppins", sans-serif;
