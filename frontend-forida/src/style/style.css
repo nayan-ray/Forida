@@ -15,6 +15,9 @@
   --breakpoint-xl: 75rem;
   --breakpoint-xxl: 87.5rem;
 
+  --color-blog: rgba(136, 136, 136, .8);
+  --color-contentBox: rgba(0, 0, 0, 0.19);
+  --color-borderHover:#9c1717;
 
   --font-poppins: "Poppins", sans-serif;
 }
