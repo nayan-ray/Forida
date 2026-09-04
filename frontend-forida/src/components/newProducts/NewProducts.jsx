@@ -113,10 +113,10 @@ const NewProducts = () => {
   return (
     <div className="mb-20">
         <div className="w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330">
-             <div className="flex items-center justify-center gap-4 mb-10">
+             <div className="flex items-center justify-center flex-wrap px-3.75 gap-4 mb-10">
                 {tabItems.map((item, index) => (
                     <div key={index} className='inline-block p-0.5 border-2 border-solid border-transparent hover:border-2 hover:border-solid hover:border-[#111]' onClick={()=> setActiveTab(item.title)}>
-                        <button className={`text-[#666666] font-normal font-poppins tracking-[0.02em] uppercase py-2 px-4 border-2 border-solid ${activeTab === item.title ?  'border-[#111]' : 'border-transparent '}`}>
+                        <button className={`text-[#666666] font-normal font-poppins tracking-[0.02em] uppercase py-1 px-4 border-2 border-solid ${activeTab === item.title ?  'border-[#111]' : 'border-transparent '}`}>
                             {item.title}
                         </button>
                     </div>

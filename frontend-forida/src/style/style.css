@@ -18,6 +18,7 @@
   --color-blog: rgba(136, 136, 136, .8);
   --color-contentBox: rgba(0, 0, 0, 0.19);
   --color-borderHover:#9c1717;
+  --color-bannerCover: rgba(255, 255, 255, 0.3);
 
   --font-poppins: "Poppins", sans-serif;
 }
