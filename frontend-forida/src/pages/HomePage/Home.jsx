@@ -5,6 +5,7 @@ import HeroBottom from '../../components/HeroBottom/HeroBottom'
 import Blog from '../../components/blog/Blog'
 import NewProducts from '../../components/newProducts/NewProducts'
 import FeaturedProduct from '../../components/featueredProduct/FeaturedProduct'
+import Brand from '../../components/brand/Brand'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Blog />
         <NewProducts />
         <FeaturedProduct />
+        <Brand />
     </div>
   )
 }
