@@ -6,6 +6,7 @@ import Blog from '../../components/blog/Blog'
 import NewProducts from '../../components/newProducts/NewProducts'
 import FeaturedProduct from '../../components/featueredProduct/FeaturedProduct'
 import Brand from '../../components/brand/Brand'
+import Testimonial from '../../components/testimonial/Testimonial'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <NewProducts />
         <FeaturedProduct />
         <Brand />
+        <Testimonial />
     </div>
   )
 }

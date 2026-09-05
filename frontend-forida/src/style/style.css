@@ -11,6 +11,7 @@
 
   --breakpoint-xs: 0rem;
   --breakpoint-sm: 36rem;
+  --breakpoint-md: 48rem;
   --breakpoint-lg: 62rem;
   --breakpoint-xl: 75rem;
   --breakpoint-xxl: 87.5rem;
@@ -19,6 +20,7 @@
   --color-contentBox: rgba(0, 0, 0, 0.19);
   --color-borderHover:#9c1717;
   --color-bannerCover: rgba(255, 255, 255, 0.3);
+  --color-testBorder:rgba(255, 255, 255, .51);
 
   --font-poppins: "Poppins", sans-serif;
 }
