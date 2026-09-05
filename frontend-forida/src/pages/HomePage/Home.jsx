@@ -7,6 +7,7 @@ import NewProducts from '../../components/newProducts/NewProducts'
 import FeaturedProduct from '../../components/featueredProduct/FeaturedProduct'
 import Brand from '../../components/brand/Brand'
 import Testimonial from '../../components/testimonial/Testimonial'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <FeaturedProduct />
         <Brand />
         <Testimonial />
+        <Footer />
     </div>
   )
 }

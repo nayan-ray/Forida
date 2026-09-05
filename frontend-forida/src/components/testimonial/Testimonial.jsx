@@ -52,7 +52,7 @@ const Testimonial = () => {
         style={{ backgroundImage: `url(${bgTestimonial})` }}
         className="max-w-[1915.2px] mx-auto bg-center bg-cover bg-origin-border px-3.75 py-10 bg-no-repeat"
       >
-        <div className="w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330 border-10 border-solid border-testBorder text-white p-10">
+        <div className="w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330 border-10 border-solid border-testBorder text-white py-10">
 
       <Swiper
           className="w-full h-full"

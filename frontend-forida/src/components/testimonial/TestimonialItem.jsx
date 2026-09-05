@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const TestimonialItem = ({userImg, userName, occupation, company, comment, swiper}) => {
   return (
      <div className="flex flex-col justify-center md:flex-row">
-            <div className="flex flex-col items-center justify-center gap-5 md:w-1/3">
+            <div className="flex flex-col items-center justify-center gap-5 md:w-1/3 px-3.75">
               <div className="w-25 h-25 rounded-full truncate">
                 <img
                   className="w-full h-full object-cover"
@@ -21,7 +21,7 @@ const TestimonialItem = ({userImg, userName, occupation, company, comment, swipe
                 <p className="cursor-default text-[15px]">{occupation}</p>
               </div>
             </div>
-            <div className="mt-4.5 text-[18px] text-center md:text-left md:w-2/3">
+            <div className="mt-4.5 text-[18px] text-center md:text-left md:w-2/3 px-3.75">
               <div className="flex items-center justify-center md:justify-start">
                 <FaQuoteLeft className="w-8 h-8" />
               </div>
