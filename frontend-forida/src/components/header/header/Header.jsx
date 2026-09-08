@@ -6,7 +6,7 @@ import MenuIcon from "../icons/MenuIcon";
 import KeyIcon from "../icons/KeyIcon";
 import SettingsIcon from "../icons/SettingsIcon";
 import Desktop from "./Desktop";
-
+import { IoIosArrowUp } from "react-icons/io";
 
 const Header = () => {
  const [showHeaderBackground, setShowHeaderBackground] = useState(false);
@@ -47,7 +47,8 @@ const Header = () => {
 
 
   return (
-    <header className={`h-auto fixed left-0 right-0 top-0 z-999 shadow-[0_5px_10px_rgba(0,0,0,0.25)] bg-black/90 ${showHeaderBackground ? 'lg:bg-black/60 lg:shadow-[0_5px_10px_rgba(0,0,0,0.25)]' : 'lg:bg-transparent lg:shadow-none lg:mt-3'}`}>
+    <>
+    <header className={`h-auto fixed left-0 right-0 top-0 z-999 shadow-[0_5px_10px_rgba(0,0,0,0.25)] bg-black/90 ${showHeaderBackground ? 'lg:bg-black/60 lg:shadow-[0_5px_10px_rgba(0,0,0,0.25)]' : 'lg:bg-transparent lg:shadow-none lg:top-4'}`}>
       <div className={`max-w-full mx-auto ${showHeaderBackground ? "px-0 pb-0" : "px-3.75 pb-7.5"} lg:px-3.75 lg:max-w-292.5 lg:h-22 lg:pb-0`}>
         <div className="desktop hidden lg:flex items-center h-full">
               <Desktop />
@@ -71,7 +72,26 @@ const Header = () => {
     
      
     </header>
+
+
+  <div className={`fixed z-999 bottom-10 right-10 group ${showHeaderBackground ? "block" : "hidden"}`}>
+     <div className="relative w-12 h-12 rounded-full border-2 border-solid border-black/70 cursor-pointer group-hover:border-[#f70b38]"
+         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+     >
+
+      <div className="flex flex-col items-center justify-center bg-black/70 absolute inset-0.75 rounded-full group-hover:bg-[#f70b38]">
+        <IoIosArrowUp className="-mb-2 text-white w-8" />
+        <IoIosArrowUp className="text-white w-8"/>
+      </div>
+
+     </div>
+     
+  </div>
+
+ </>
+
   );
+
 };
 
 export default Header;
