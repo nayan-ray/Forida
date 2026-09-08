@@ -25,6 +25,12 @@ const breakpoints = {
   return (
     <div className="mb-10">
       <div className="w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330">
+
+       <div className="text-center px-3.75">
+            <h2><span className="cursor-pointer text-[32px] font-poppins font-semibold uppercase text-[#111] hover:text-[#f70b38] relative after:content[''] after:absolute after:w-1/5 after:h-0.5 after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-300 after:ease-in-out after:bg-[#f70b38] after:invisible hover:after:visible hover:after:w-5/5">Featured Products</span></h2>
+            <p className="mt-4 mb-10 text-[15px]">Lorem ipsuet adipisicing elit, sed det adipisicing elit, sed sed det adipisicing elit.</p>
+       </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8">
 
           <div className="px-3.75 ">

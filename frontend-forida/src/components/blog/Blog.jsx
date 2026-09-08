@@ -16,7 +16,12 @@ const Blog = () => {
     },
   };
   return (
-    <div className="  w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330 mb-15">
+    <div className="my-22">
+      <div className="  w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330 mb-15">
+       <div className="text-center 3.75">
+            <h2><span className="cursor-pointer text-[32px] font-poppins font-semibold uppercase text-[#111] hover:text-[#f70b38] relative after:content[''] after:absolute after:w-1/5 after:h-0.5 after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-300 after:ease-in-out after:bg-[#f70b38] after:invisible hover:after:visible hover:after:w-5/5">Our Blog</span></h2>
+            <p className="mt-4 mb-10 text-[15px]">Lorem ipsuet adipisicing elit, sed det adipisicing elit, sed sed det adipisicing elit.</p>
+       </div>
       <div className="relative z-20 w-full h-full mt-7.5 bg-white mb-3 ">
         <Swiper
           className="mySwiper w-full h-full"
@@ -182,6 +187,8 @@ const Blog = () => {
         </Swiper>
       </div>
     </div>
+    </div>
+    
   );
 };
 

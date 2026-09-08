@@ -113,7 +113,14 @@ const NewProducts = () => {
   return (
     <div className="mb-20">
         <div className="w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330">
-             <div className="flex items-center justify-center flex-wrap px-3.75 gap-4 mb-10">
+
+       <div className="text-center mb-4 px-3.75">
+            <h2><span className="cursor-pointer text-[32px] font-poppins font-semibold uppercase text-[#111] hover:text-[#f70b38] relative after:content[''] after:absolute after:w-1/5 after:h-0.5 after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:transition-all after:duration-300 after:ease-in-out after:bg-[#f70b38] after:invisible hover:after:visible hover:after:w-5/5">New Products</span></h2>
+           
+       </div>
+
+             <div>
+                <div className="flex items-center justify-center flex-wrap px-3.75 gap-4 mb-10">
                 {tabItems.map((item, index) => (
                     <div key={index} className='inline-block p-0.5 border-2 border-solid border-transparent hover:border-2 hover:border-solid hover:border-[#111]' onClick={()=> setActiveTab(item.title)}>
                         <button className={`text-[#666666] font-normal font-poppins tracking-[0.02em] uppercase py-1 px-4 border-2 border-solid ${activeTab === item.title ?  'border-[#111]' : 'border-transparent '}`}>
@@ -185,6 +192,8 @@ const NewProducts = () => {
 
                    
              </div>
+             </div>
+             
         </div>
     </div>
   )

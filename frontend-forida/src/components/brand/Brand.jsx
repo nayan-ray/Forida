@@ -23,8 +23,8 @@ const Brand = () => {
   };
 
   return (
-    <div className="mb-10">
-      <div className="w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330 py-7 border-t border-solid border-[#47353521] border-b">
+    <div className="mb-10 mt-22">
+      <div className="w-full mx-auto z-3 sm:max-w-135 md:max-w-180 lg:max-w-240 xl:max-w-285 xxl:max-w-330 py-10 border-t border-solid border-[#47353521] border-b">
         <Swiper
           className="mySwiper"
           modules={[Autoplay]}
