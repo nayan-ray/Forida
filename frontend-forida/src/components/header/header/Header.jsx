@@ -7,6 +7,7 @@ import KeyIcon from "../icons/KeyIcon";
 import SettingsIcon from "../icons/SettingsIcon";
 import Desktop from "./Desktop";
 import { IoIosArrowUp } from "react-icons/io";
+import DeskSearch from "../icons/DeskSearch";
 
 const Header = () => {
  const [showHeaderBackground, setShowHeaderBackground] = useState(false);
@@ -62,10 +63,10 @@ const Header = () => {
           </div>
           <div className="bg-white flex ">
             <MenuIcon />
-            <SearchIcon />
-            <CartIcon />
+            <DeskSearch mode={'2'}/>
+            <CartIcon mode={'8'}/>
             <KeyIcon />
-             <SettingsIcon />
+            <SettingsIcon />
           </div>
         </div>
       </div>

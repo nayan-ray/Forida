@@ -2,8 +2,9 @@ import React from 'react'
 import logoImg from "../../../assets/forida2-logo-15465079752 (1).jpg"
 
 import { Menu } from 'lucide-react'
-import DeskCart from '../icons/DeskCart'
+// import DeskCart from '../icons/DeskCart'
 import DeskSearch from '../icons/DeskSearch'
+import CartIcon from '../icons/CartIcon'
 
 const Desktop = () => {
   return (
@@ -19,8 +20,8 @@ const Desktop = () => {
           <li className='pb-0.75'>Blog</li>
        </ul>
        <div className='flex gap-7.5 items-center text-white'>
-         <DeskSearch />
-         <DeskCart />
+          <DeskSearch mode={'3'}/>
+          <CartIcon mode={'9'}/>
           <Menu size={20} color="#fff" strokeWidth={3} />
        </div>
 
