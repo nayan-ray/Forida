@@ -203,7 +203,7 @@ const SearchCom = () => {
   };
 
   return (
-    <div className="text-[#333]">
+    <div className="text-[#333] bg-white">
       <h4 id={labelId} className="font-poppins text-[18px] font-semibold">
         Search
       </h4>

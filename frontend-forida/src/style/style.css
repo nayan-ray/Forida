@@ -20,6 +20,7 @@
   --color-contentBox: rgba(0, 0, 0, 0.19);
   --color-borderHover:#9c1717;
   --color-bannerCover: rgba(255, 255, 255, 0.3);
+  --color-productCover: rgba(0, 0, 0, 0.1);
   --color-testBorder:rgba(255, 255, 255, .51);
 
   --font-poppins: "Poppins", sans-serif;

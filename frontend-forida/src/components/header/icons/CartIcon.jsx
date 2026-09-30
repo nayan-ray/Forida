@@ -1,5 +1,6 @@
 import React from "react";
 import { ShoppingCart, X } from "lucide-react";
+import CartBody from "./CartBody";
 
 const CartIcon = ({mode}) => {
   const mobile = mode === '8'
@@ -10,7 +11,7 @@ const CartIcon = ({mode}) => {
     >
       <ShoppingCart size={mobile ? 14 : 20} color={mobile ? "#111" : "#fff"} strokeWidth={3} />
 
-      <dialog id={`my_modal_D${mode}`} className="modal modal-end bg-[#333333]/50">
+      <dialog id={`my_modal_D${mode}`} className="modal modal-end bg-black/80">
         <div className="modal-box w-93 overflow-y-visible transition-all duration-300 delay-200 relative flex gap-1 items-start bg-transparent p-0 shadow-none">
           <div className="modal-action mt-1 items-start transition-all duration-300 ease-in-out">
             <form method="dialog">
@@ -22,7 +23,7 @@ const CartIcon = ({mode}) => {
           </div>
 
           <div className="flex-1 w-full h-full bg-white p-4 transition-all duration-300 ease-in-out">
-            {/* <SearchCom /> */}
+           <CartBody />
           </div>
         </div>
       </dialog>
