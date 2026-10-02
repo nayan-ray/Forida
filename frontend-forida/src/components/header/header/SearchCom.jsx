@@ -1,100 +1,4 @@
-// import React, { useRef, useState } from "react";
-// import { useClickOutside } from "../../../hook/DeteckClick";
-// import { FaSearch } from "react-icons/fa";
 
-// const SearchCom = () => {
-//   const [open, setOpen] = useState(false);
-//   const [borderColor, setBorderColor] = useState(true);
-//   const [value, setValue] = useState("");
-
-//   const containerRef = useRef(null);
-
-//   useClickOutside(containerRef, () => {
-//     setOpen(false);
-//     setBorderColor(false);
-//   });
-
-//   const handleSelect = () => {
-//     setOpen(!open);
-//     setBorderColor(true);
-//   };
-
-//   const items = [
-//     {
-//       id: 1,
-//       title: "Green",
-//     },
-//     {
-//       id: 1,
-//       title: "Red",
-//     },
-//     {
-//       id: 1,
-//       title: "Yellow",
-//     },
-//     {
-//       id: 1,
-//       title: "blue",
-//     },
-//   ];
-
-//   return (
-//     <div className="text-[#333]">
-//       <h4 className="font-poppins text-[18px] font-semibold">Search</h4>
-//       <div
-//         className={`border-2 border-solid mt-2 ${borderColor ? "border-amber-500" : "border-gray-300"}`}
-//         ref={containerRef}
-//         onClick={handleSelect}
-//       >
-//         <div className="relative">
-//           <button className="block w-full ">
-//             <div className="flex items-center justify-between px-4 py-2 text-[14px]">
-//               <span>{value.length === 0 ? "All Categories" : value}</span>
-//               <span>red</span>
-//             </div>
-//           </button>
-//           {open && (
-//             <ul className="list-none border border-solid border-[#333] bg-white absolute w-full z-25 left-0 top-full max-h-70 overflow-y-scroll mt-0.5 text-[14px]">
-//               {items.map((item, index) => {
-//                 return (
-//                   <li
-//                     key={index}
-//                     className={`px-4 py-1 ${value === item.title ? "bg-[#0e66a0f8] text-white" : ""} hover:bg-[#0e66a0f8] hover:text-white`}
-//                     onClick={() => setValue(item.title)}
-//                   >
-//                     {item.title}
-//                   </li>
-//                 );
-//               })}
-//             </ul>
-//           )}
-//         </div>
-//       </div>
-//       <div>
-//         <input
-//           className="w-full outline-none border-2 border-solid border-gray-300 focus:border-amber-300 focus:outline-none mt-2 px-4 py-2 text-[14px]"
-//           type="text"
-//           placeholder="Enter Your Search"
-//         />
-//       </div>
-//       <p>
-//         Popular keyword : <button>dress, ...</button>
-//       </p>
-//       <div>
-//         <div>
-//           <div className="flex items-center justify-center mt-5">
-//             <FaSearch size={100} />
-//           </div>
-//           <p className="text-center px-4 py-2 text-[14px]">
-//             Please enter 3 or more keyword
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default SearchCom;
 
 import React, { useEffect, useId, useRef, useState } from "react";
 import { useClickOutside } from "../../../hook/DeteckClick";
@@ -210,7 +114,7 @@ const SearchCom = () => {
 
       <div
         ref={containerRef}
-        className="border-2 border-solid mt-2 border-gray-300 focus-within:border-amber-500"
+        className="border-2 border-solid mt-2 border-gray-300 focus-within:border-[#f70b38]"
       >
         <div className="relative">
           <button
@@ -278,7 +182,7 @@ const SearchCom = () => {
       <div>
         <input
           aria-label="Enter your search"
-          className="w-full outline-none border-2 border-solid border-gray-300 focus:border-amber-300 focus:outline-none mt-2 px-4 py-2 text-[14px]"
+          className="w-full outline-none border-2 border-solid border-gray-300 focus:border-[#f70b38] focus:outline-none mt-2 px-4 py-2 text-[14px]"
           type="text"
           placeholder="Enter Your Search"
         />
