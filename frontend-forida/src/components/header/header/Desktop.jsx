@@ -21,11 +21,11 @@ const Desktop = () => {
         <img src={logoImg} alt="logo" />
       </div>
       <ul className="flex gap-7.5 text-white text-[16px] uppercase font-poppins cursor-pointer tracking-[1px] font-medium">
-        <li className="pb-0.75">Home</li>
-        <li className="pb-0.75">Shop</li>
-        <li className="pb-0.75">Chairs</li>
-        <li className="pb-0.75">About us</li>
-        <li className="pb-0.75">Blog</li>
+        <li className="pb-0.75 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:invisible hover::before:transition-all hover:before:duration-300 hover:before:ease-in-out hover:before:w-full hover:before:visible ">Home</li>
+        <li className="pb-0.75 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:invisible hover::before:transition-all hover:before:duration-300 hover:before:ease-in-out hover:before:w-full hover:before:visible ">Shop</li>
+        <li className="pb-0.75 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:invisible hover::before:transition-all hover:before:duration-300 hover:before:ease-in-out hover:before:w-full hover:before:visible ">Chairs</li>
+        <li className="pb-0.75 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:invisible hover::before:transition-all hover:before:duration-300 hover:before:ease-in-out hover:before:w-full hover:before:visible ">About us</li>
+        <li className="pb-0.75 relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:invisible hover::before:transition-all hover:before:duration-300 hover:before:ease-in-out hover:before:w-full hover:before:visible ">Blog</li>
       </ul>
       <div  className={`flex gap-7.5 items-center text-white ${open ? 'before:content-[""] before:fixed before:w-full before:h-full before:top-0 before:left-0 before:bg-transparent before:-z-20' : ''}`}>
         <DeskSearch mode={"3"} />
