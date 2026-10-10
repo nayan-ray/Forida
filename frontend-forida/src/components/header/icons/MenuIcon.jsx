@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu } from "lucide-react";
+import { ArrowLeftIcon, Menu } from "lucide-react";
 
 const MenuIcon = () => {
   return (
@@ -9,17 +9,22 @@ const MenuIcon = () => {
     >
       <Menu size={14} color="#111" strokeWidth={3} />
 
-      <dialog id="my_modal_1" className="modal modal-end bg-black/50">
-        <div className="modal-box  transition-all duration-300 delay-200 relative">
-          <div className="p-4 ">Menu</div>
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">
-            Press ESC key or click the button below to close
-          </p>
+      <dialog id="my_modal_1" className="modal modal-start bg-black/50">
+        <div className="modal-box w-70/100 transition-all duration-300 delay-200 relative overflow-visible">
+          <ul>
+            <li className="text-[16px] text-[#333333] font-semibold py-2 border-b border-solid border-[#111]/10 uppercase">Home</li>
+            <li className="text-[16px] text-[#333333] font-semibold py-2 border-b border-solid border-[#111]/10 uppercase">Shop</li>
+            <li className="text-[16px] text-[#333333] font-semibold py-2 border-b border-solid border-[#111]/10 uppercase">Chairs</li>
+            <li className="text-[16px] text-[#333333] font-semibold py-2 border-b border-solid border-[#111]/10 uppercase">Sofa</li>
+            <li className="text-[16px] text-[#333333] font-semibold py-2 border-b border-solid border-[#111]/10 uppercase">About us</li>
+            <li className="text-[16px] text-[#333333] font-semibold py-2 border-b border-solid border-[#111]/10 uppercase">Blog</li>
+          </ul>
           <div className="modal-action">
-            <form method="dialog">
+            <form method="dialog" className="absolute top-2 -right-13 bg-white ">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
+              <button className="p-3 ">
+                <ArrowLeftIcon size={20} color="#111" strokeWidth={4} />
+              </button>
             </form>
           </div>
         </div>
