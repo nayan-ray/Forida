@@ -58,11 +58,11 @@ const Hero = () => {
           onSwiper={setSwiper}
           loop={true}
           speed={800}
-          autoplay={{
-            delay: 4000,
-            pauseOnMouseEnter: true,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 4000,
+          //   pauseOnMouseEnter: true,
+          //   disableOnInteraction: false,
+          // }}
         
         >
           {slides.map((slide, index) => (
