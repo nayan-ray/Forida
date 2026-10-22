@@ -12,7 +12,7 @@ import Footer from '../../components/Footer/Footer'
 const Home = () => {
   return (
     <div>
-        <Header />
+        {/* <Header /> */}
         <Hero />
         <HeroBottom />
         <NewProducts />
@@ -20,7 +20,7 @@ const Home = () => {
         <FeaturedProduct /> 
         <Brand />       
          <Blog />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }
